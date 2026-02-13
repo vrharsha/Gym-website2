@@ -1,0 +1,275 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff4b2b;
+  letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+nav {
+  text-align: center;
+  background: #111;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4b2b;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #ff4b2b;
+}
+
+/* HERO */
+.hero {
+  background: url("Gymlogo.jpeg") center center no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
+/* ABOUT BOX */
+#about {
+  padding: 80px 20px;
+}
+
+.box {
+  background: rgba(255,255,255,0.08);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 950px;
+  margin: 40px auto;
+  line-height: 1.9;
+  font-size: 18px;
+  text-align: justify;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+/* LOCATION BUTTON */
+.location-btn-container {
+  margin-top: 30px;
+}
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #34a853, #4285f4);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.map-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(66, 133, 244, 0.7);
+}
+
+/* PRICING */
+.plan-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.plan-box {
+  background: #ff4b2b;
+  padding: 30px;
+  width: 280px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.plan-box:hover {
+  transform: translateY(-10px);
+  background: #ff416c;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
+
+/* GALLERY */
+#gallery {
+  padding: 80px 20px;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.slider-track img,
+.slider-track video {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.slider-track img:hover,
+.slider-track video:hover {
+  transform: scale(1.05);
+}
+
+/* INFINITE SCROLL */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content img,
+.modal-content video {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* COACH */
+.coach-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.coach-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.coach-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* REGISTER */
+.register-container {
+  margin-top: 40px;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 20px 60px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 75, 43, 0.8);
+}
+
+/* CONTACT */
+.contact-box {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.contact-box p {
+  margin-bottom: 20px;
+}
+
+.insta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.insta-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(214, 41, 118, 0.7);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  margin-top: 40px;
+}
