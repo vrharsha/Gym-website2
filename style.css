@@ -25,7 +25,10 @@ header {
 
 /* NAVIGATION */
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;      /* Important for mobile */
+  gap: 20px;
   background: #111;
   padding: 15px;
 }
@@ -33,9 +36,9 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 20px;
   font-weight: bold;
   transition: 0.3s;
+  padding: 5px 10px;
 }
 
 nav a:hover {
@@ -273,3 +276,113 @@ footer {
   background: black;
   margin-top: 40px;
 }
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  header {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .box {
+    padding: 25px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .plan-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-box {
+    width: 90%;
+  }
+
+  .slider-track img,
+  .slider-track video {
+    width: 180px;
+    height: 180px;
+  }
+
+  .coach-container {
+    flex-direction: column;
+  }
+
+  .coach-card {
+    width: 90%;
+  }
+
+  .register-btn {
+    width: 90%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .contact-box {
+    width: 90%;
+  }
+
+}
+
+
+/* ============================= */
+/* 📟 TABLET RESPONSIVE */
+/* ============================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .box {
+    max-width: 90%;
+    font-size: 17px;
+  }
+
+  .plan-box {
+    width: 260px;
+  }
+
+  .slider-track img,
+  .slider-track video {
+    width: 220px;
+    height: 220px;
+  }
+
+}
+
+
+/* ============================= */
+/* 🖥 LARGE SCREEN OPTIMIZATION */
+/* ============================= */
+
+@media (min-width: 1200px) {
+
+  .box {
+    max-width: 1100px;
+    font-size: 18px;
+  }
+
+  .slider-track img,
+  .slider-track video {
+    width: 280px;
+    height: 280px;
+  }
+
+}
+
